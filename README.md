@@ -15,8 +15,8 @@ Required GitHub repository secrets:
 
 - `UNITY_LICENSE`: Personal license file contents from `Unity_lic.ulf`.
 - `UNITY_SERIAL`: Plus/Pro serial key. Use this instead of `UNITY_LICENSE` for paid seats.
-- `UNITY_EMAIL`: Unity account email. Required only with `UNITY_SERIAL`.
-- `UNITY_PASSWORD`: Unity account password. Required only with `UNITY_SERIAL`.
+- `UNITY_EMAIL`: Unity account email.
+- `UNITY_PASSWORD`: Unity account password.
 
 For a Personal license, Unity normally writes the license file here on macOS:
 
