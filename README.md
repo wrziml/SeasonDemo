@@ -13,9 +13,18 @@ This repository is prepared for open-source cloud builds with GitHub Actions and
 
 Required GitHub repository secrets:
 
-- `UNITY_LICENSE`: Unity license content used by CI.
 - `UNITY_EMAIL`: Unity account email, used by some license flows.
 - `UNITY_PASSWORD`: Unity account password, used by some license flows.
+- `UNITY_LICENSE`: Personal license file contents from `Unity_lic.ulf`.
+- `UNITY_SERIAL`: Plus/Pro serial key. Use this instead of `UNITY_LICENSE` for paid seats.
+
+For a Personal license, Unity normally writes the license file here on macOS:
+
+```bash
+/Library/Application\ Support/Unity/Unity_lic.ulf
+```
+
+If that file does not exist, open Unity Hub, go to `Preferences > Licenses`, click `Add`, and activate a free Personal license.
 
 The workflow lives at `.github/workflows/unity-ci.yml` and runs:
 
