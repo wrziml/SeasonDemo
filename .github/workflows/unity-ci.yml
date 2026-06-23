@@ -10,6 +10,8 @@ on:
 
 permissions:
   contents: read
+  checks: write
+  pull-requests: write
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
